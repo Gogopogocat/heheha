@@ -9,7 +9,7 @@ console.log(links)
 const job = schedule.scheduleJob('*/13 * * * *', function(){
   links.forEach(async (link) => {
     try {
-      const response = await axios.post(link, {"Nebulous":"Pigeon"});
+      const response = await axios.post(link, {"M":"Dev"});
       console.log(`Successfully posted to ${link}`);
     } catch (error) {
       console.error(`Error posting to ${link}: ${error}`);
